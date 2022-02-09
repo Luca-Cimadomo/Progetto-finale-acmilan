@@ -3,23 +3,34 @@
 }
 .site{
     display: grid;
+    grid-template: "header header" "main nav";
     grid-template-columns: 10fr 1fr;
     grid-template-rows: auto;
 
 }
-.area-header{
+header{
+    grid-area: header;
     text-align: center;
     margin-top: -15px;
     font-style: italic;
 }
-.area-main{
+main{
+    grid-area: main;
     font-style: initial;
     text-align: center;
+    border-right: 100px;
+    margin-left: 250px;
 }
 #Theo{
     width: 690px;
     height: 500px;
 }
-.area-nav{
-    
+nav{
+    grid-area: nav;
+    font-size: larger;
+    font-family: sans-serif;
 }
+#lista{
+    margin-right: 100px;
+}    
+
